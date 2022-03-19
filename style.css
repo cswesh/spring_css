@@ -22,16 +22,16 @@
     
   }
   .homefront::before{
-      content:'';
-      position: absolute;
-      top: 47px;
-      left: 40px;
-      width:70px;
+    content:'';
+    position: absolute;
+    top: 47px;
+    left: 40px;
+    width:70px;
     height:100px;
     border:1px solid #000;
-      background-image: linear-gradient(#fd4242 3px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-      background-size: 35px 35px;
-      background-color: #801002;
+    background-image: linear-gradient(#fd4242 3px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
+    background-size: 35px 35px;
+    background-color: #801002;
   }
   .homefront::after{
     content:'';
@@ -80,26 +80,26 @@
     background-size: 35px 35px;
   }
   .h1circle{
-      position: absolute;
-      top: -50px;
-      left: 58px;
-      height: 40px;
-      width: 30px;
-      border-radius: 50%;
-      background-image: linear-gradient(#fd4242 1px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-      background-size: 15px 20px;
-      background-color: #801002;
+    position: absolute;
+    left: -20px;
+    top: -75px;
+    height: 45px;
+    width: 0px;
+    border-left: 90px dotted transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 80px solid #e4daaf;
   }
   .h1circle::after{
     content:'';
     position: absolute;
-    left: -60px;
-    top: -35px;
-    width: 140px;
-    height: 90px;
-    /* border: 1px solid #111; */
-    background: #e4daaf;
-    border-top-right-radius: 100%;
+    top: 20px;
+    left: -15px;
+    height: 40px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(#fd4242 1px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
+    background-size: 15px 20px;
+    background-color: #801002;
   }
   .h1win1{
     position: absolute;
