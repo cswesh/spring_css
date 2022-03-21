@@ -1,125 +1,235 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    position:relative;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    min-height:100vh;
-    background: linear-gradient(#6ecefa,#e4daaf, #639262,#30682e);
-  }
-  .homefront{
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#6ecefa, #e4daaf, #639262, #30682e);
+}
+.homefront {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: linear-gradient(to bottom right, #e4daaf, #dad2b1);
+}
+.homefront::before {
+  content: "";
+  position: absolute;
+  top: 47px;
+  left: 40px;
+  width: 70px;
+  height: 100px;
+  border: 1px solid #000;
+  background-image: linear-gradient(#fd4242 3px, transparent 1px),
+    linear-gradient(to left, #fd4242 1px, transparent 1px);
+  background-size: 35px 35px;
+  background-color: #801002;
+}
+.homefront::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -152px;
+  width: 150px;
+  height: 150px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: linear-gradient(to bottom right, #e4daaf, #dad2b1);
+  z-index: 1;
+  border-top-left-radius: 40px;
+}
+.skewline {
+  position: relative;
+  top: -95px;
+  left: 15px;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #000;
+  transform: skew(135deg);
+  background: linear-gradient(#fd4242, #801002);
+  z-index: 10;
+}
+.skewline::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 125px;
+  height: 123px;
+  border: 1px solid #fd4242;
+  background-image: linear-gradient(#fd4242 2px, transparent 1px),
+    linear-gradient(to left, #fd4242 1px, transparent 1px);
+  background-size: 30px 35px;
+}
+.skewline::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 224px;
+  width: 25px;
+  height: 126px;
+  border: 1px solid #fd4242;
+  transform: skew(238deg);
+  background-image: linear-gradient(#801002 1px, #d33924 1px),
+    linear-gradient(to bottom, #111 1px, #e66465 1px);
+  background-size: 35px 35px;
+}
+.h1circle {
+  position: relative;
+  left: -10px;
+  top: -80px;
+  width: 0px;
+  border-left: 85px dotted transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 80px solid #e4daaf;
+}
+.h1circle::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -17px;
+  height: 40px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: linear-gradient(#fd4242 1px, transparent 1px),
+    linear-gradient(to left, #fd4242 1px, transparent 1px);
+  background-size: 15px 20px;
+  background-color: #801002;
+}
+.h1win1 {
+  position: absolute;
+  top: 70px;
+  left: -60px;
+  height: 40px;
+  width: 30px;
+  background-image: linear-gradient(#fd4242 3px, transparent 1px),
+    linear-gradient(to left, #fd4242 1px, transparent 1px);
+  background-size: 15px 20px;
+  background-color: #801002;
+  z-index: 10;
+}
+.h1win2 {
+  position: absolute;
+  top: 70px;
+  left: -130px;
+  height: 40px;
+  width: 30px;
+  background-image: linear-gradient(#fd4242 3px, transparent 1px),
+    linear-gradient(to left, #fd4242 1px, transparent 1px);
+  background-size: 15px 20px;
+  background-color: #801002;
+  z-index: 10;
+}
+
+/* end of home */
+
+/* start of flowers */
+.flower1{
     position: relative;
-    width:150px;
-    height:150px;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background: #e4daaf;
-    
-  }
-  .homefront::before{
+    top: calc(var(--i) * 120px);
+    left: calc(var(--j) * 100px);
+    width: 5px;
+    height: 100px;
+    border: 1px solid #111;
+    background: #0f610f;
+}
+.flower1::before{
     content:'';
     position: absolute;
-    top: 47px;
-    left: 40px;
-    width:70px;
-    height:100px;
-    border:1px solid #000;
-    background-image: linear-gradient(#fd4242 3px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-    background-size: 35px 35px;
-    background-color: #801002;
-  }
-  .homefront::after{
-    content:'';
-    position: absolute;
-    top: -1px;
-    left: -152px;
-    width: 150px;
-    height: 150px;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #e4daaf;
-    z-index: 1;
-    border-top-left-radius: 40px;
-  }
-  .skewline{
-    position: relative;
-    top: -95px;
-    left: 15px;
-    width: 125px;
-    height:125px;
-    border:1px solid #000;
-    transform:skew(135deg);
-    background:linear-gradient(#fd4242, #801002);  
-    z-index: 10;  
-  }
-  .skewline::before{
-    content:'';
-    position: absolute;
-    left: -2px;
-    width: 125px;
-    height:123px;
-    border:1px solid #fd4242;
-    background-image: linear-gradient(#fd4242 2px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-    background-size: 30px 35px;   
-  }
-  .skewline::after{
-    content:'';
-    position: absolute;
-    top: 0px;
-    left: 240px;
-    width: 10px;
-    height: 126px;
-    border:1px solid #fd4242;
-    transform:skew(243deg);
-    background-image: linear-gradient(#801002 1px, #d33924 1px),linear-gradient(to bottom, #111 1px, #e66465 1px);
-    background-size: 35px 35px;
-  }
-  .h1circle{
-    position: absolute;
-    left: -20px;
-    top: -75px;
-    height: 45px;
-    width: 0px;
-    border-left: 90px dotted transparent;
-    border-right: 90px solid transparent;
-    border-bottom: 80px solid #e4daaf;
-  }
-  .h1circle::after{
-    content:'';
-    position: absolute;
-    top: 20px;
+    top: -31px;
     left: -15px;
-    height: 40px;
     width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-bottom-left-radius:50% ;
+    border-bottom-right-radius:50% ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.flower1::after{
+    content:'';
+    position: absolute;
+    top: -31px;
+    left: -15px;
+    width: 30px;
+    height: 10px;
+    /* border: 1px solid #da6e26; */
     border-radius: 50%;
-    background-image: linear-gradient(#fd4242 1px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-    background-size: 15px 20px;
-    background-color: #801002;
-  }
-  .h1win1{
+    filter:drop-shadow(0 0 10px #da6e26) drop-shadow(0 0 10px #da6e26) drop-shadow(0 0 10px #da6e26)
+}
+.stem{
     position: absolute;
-    top: 70px;
-    left: -60px;
-    height: 40px;
-    width: 30px;
-    background-image: linear-gradient(#fd4242 3px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-    background-size: 15px 20px;
-    background-color: #801002;
-    z-index: 10;
-  }
-  .h1win2{
+    top: -9px;
+    left: -1px;
+    width: 6px;
+    height: 10px;
+    background: #0f610f;
+    border: 1px solid #0f610f;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.leaf-left{
     position: absolute;
-    top: 70px;
-    left: -130px;
-    height: 40px;
-    width: 30px;
-    background-image: linear-gradient(#fd4242 3px, transparent 1px),linear-gradient(to left, #fd4242 1px, transparent 1px);
-    background-size: 15px 20px;
-    background-color: #801002;
-    z-index: 10;
-  }
+    top: 10px;
+    left: 3px;
+    width: 20px;
+    height: 35px;
+    background-color: #0f610f;
+    border-radius: 50px/250% 10px;
+    transform: skew(177deg, 161deg);
+}
+.leaf-right{
+    position: absolute;
+    top: 10px;
+    left:-20px;
+    width:20px;
+    height: 35px;
+    background-color: #0f610f;
+    border-radius:10px 50px/250%;
+    transform: skew(184deg, 20deg);
+}
+
+.petal1{
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    width: 36px;
+    height: 42px;
+    background:linear-gradient(to top right,#f1c637,#d3b924);
+    clip-path: polygon(52% 98%, 23% 80%, 7% 40%, 26% 12%, 67% 41%);
+}
+.petal2{
+    position: absolute;
+    top: -35px;
+    left: -13px;
+    width: 44px;
+    height: 42px;
+    background:linear-gradient(to top right,#f1cf37,#d3a424);
+    clip-path: polygon(28% 85%, 48% 26%, 68% 12%, 70% 69%, 61% 81%);
+}
+.petal3{
+    position: absolute;
+    top: -43px;
+    left: -22px;
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(to top right,#c9bf35,#ece931);
+    clip-path: polygon(53% 89%, 39% 52%, 22% 30%, 69% 31%);
+}
+.petal4{
+    position: absolute;
+    top: -43px;
+    left: -22px;
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(to top right,#f3d13a,#d3c43d);
+    clip-path: polygon(19% 36%, 10% 15%, 25% 5%, 47% 26%, 67% 14%, 73% 28%, 69% 38%);
+}
+/* end of flowers */
