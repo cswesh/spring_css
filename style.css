@@ -233,3 +233,15 @@
     clip-path: polygon(19% 36%, 10% 15%, 25% 5%, 47% 26%, 67% 14%, 73% 28%, 69% 38%);
 }
 /* end of flowers */
+/* mountains */
+.mountain{
+    position: relative;
+    top: -100px;
+    left: calc(var(--i) * -3%);
+    /* width: 250px; */
+    /* height: 350px; */
+    border-left: 90px dotted transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 229px solid #692c02;
+}
+/* end of mountains */
