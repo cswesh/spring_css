@@ -244,4 +244,32 @@
     border-right: 110px solid transparent;
     border-bottom: 229px solid #692c02;
 }
+.mountain.sun::after{
+    content:'';
+    position: absolute;
+    top: 16px;
+    left: 52px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #c9bf35;
+    background-color: #c9bf35;
+    filter:drop-shadow(0 0 10px #c9bf35) drop-shadow(0 0 10px #c9bf35) drop-shadow(0 0 10px #c9bf35) 
+}
 /* end of mountains */
+/* pond */
+.mountain.pond::after{
+    content: '';
+    position: absolute;
+    top: 215px;
+    left: -320px;
+    width: 309px;
+    height: 326px;
+    /* border-radius: 50%; */
+    /* background-color: #3fe7f3; */
+    background: linear-gradient(to top left, #29e0ed, #9cedf3, #025258);
+    transform: skew(-23deg, -1deg);
+    clip-path: polygon(12% 4%, 92% 5%, 91% 15%, 85% 27%, 82% 32%, 85% 41%, 88% 52%, 83% 58%, 79% 61%, 80% 68%, 78% 80%, 71% 85%, 67% 88%, 61% 90%, 54% 98%, 37% 100%, 23% 100%, 9% 99%, 2% 90%, 2% 63%, 2% 39%);
+    filter: drop-shadow(0 0 100px #0b555a) drop-shadow(0 0 100px #38adb6) drop-shadow(0 0 100px #044549);
+}
+/* end of pond */
